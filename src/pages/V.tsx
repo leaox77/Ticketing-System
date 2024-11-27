@@ -1,4 +1,3 @@
-import React from 'react';
 import VideoPlayer from '@/components/ui/video-player';
 
 const V = () => {

@@ -1,5 +1,3 @@
-import React from 'react';
-
 interface VideoPlayerProps {
   videoId: string;
   title: string;

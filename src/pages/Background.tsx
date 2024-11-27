@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Background = () => {
   return (
     <div className="max-w-4xl mx-auto">
