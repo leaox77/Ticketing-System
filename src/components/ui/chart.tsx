@@ -1,4 +1,5 @@
 import * as RechartsPrimitive from 'recharts';
+import React from 'react';
 
 
 import { cn } from '@/lib/utils';

@@ -91,7 +91,7 @@ const Navbar = () => {
           </div>
 
           <div className="flex items-center">
-            <button
+            <button type="button"
               onClick={toggleTheme}
               className="p-2 rounded-lg text-foreground hover:bg-accent transition-colors"
               aria-label="Toggle theme"
