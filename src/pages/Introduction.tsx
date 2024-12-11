@@ -7,7 +7,6 @@ import enc3 from '../assets/enc3.png';
 import enc4 from '../assets/enc4.png';
 import enc5 from '../assets/enc5.png';
 import enc6 from '../assets/enc6.png';
-import image from '../assets/image.png';
 import ben from '../assets/ben.png';
 import arb from '../assets/arb.png';
 
@@ -138,13 +137,14 @@ Este sistema debe mejorar la experiencia del usuario al permitirle poder ver una
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center justify-center text-gray-500 mx-auto">
+        <img src={enc1} alt="Encuesta 5" className="w-3/4 h-90 object-cover rounded-lg mx-auto" />
               <img src={enc2} alt="Encuesta 2" className="w-3/4 h-90 object-cover rounded-lg mx-auto" />
 
             <img src={enc3} alt="Encuesta 3" className="w-3/4 h-90 object-cover rounded-lg mx-auto" />
 
              <img src={enc4} alt="Encuesta 4" className="w-3/4 h-90 object-cover rounded-lg mx-auto" />
 
-              <img src={enc5} alt="Encuesta 5" className="w-3/4 h-90 object-cover rounded-lg mx-auto" />
+              
               <img src={enc5} alt="Encuesta 5" className="w-3/4 h-90 object-cover rounded-lg mx-auto" />
           </div>
 

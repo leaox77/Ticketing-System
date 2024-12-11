@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom';
-
 const DP = () => {
   return (
     <div className="max-w-7xl mx-auto p-6 space-y-10">
