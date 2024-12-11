@@ -24,9 +24,9 @@ const Content = () => {
 
         <ul className="list-disc list-inside mt-4 text-gray-700 dark:text-gray-300">
             <li><strong>Diseño Intuitivo:</strong> Navega con facilidad y simplicidad.</li>
-            <li><strong>Actualizaciones en Tiempo Real:</strong> Mantente actualizado con información en vivo.</li>
-            <li><strong>Pagos Seguros:</strong> Asegura la seguridad de los datos del cliente.</li>
-            <li><strong>Analíticas Avanzadas:</strong> Obtén información sobre el rendimiento de tus ventas.</li>
+            <li><strong>Documentación Completa:</strong> Accede a una guía detallada y bien estructurada.</li>
+            <li><strong>Diagramas Claros:</strong> Visualiza el flujo del sistema con diagramas precisos.</li>
+            <li><strong>Video Explicativo:</strong> Aprende a usar el sistema con un video tutorial.</li>
         </ul>
       </div>
 
