@@ -1,28 +1,29 @@
 const BehaviorModel = () => {
   return (
-    <div className="max-w-4xl mx-auto">
-      <h1 className="text-3xl font-bold mb-6 text-gray-900 dark:text-white">Behavior Model</h1>
-      <div className="space-y-4 text-gray-600 dark:text-gray-300">
-        <p>
-          The Behavior Model defines how the cinema ticketing system responds to various events
-          and user interactions, ensuring consistent and reliable operation.
+    <div className="max-w-7xl mx-auto p-6 space-y-10">
+      <h1 className="text-5xl font-extrabold text-center text-gray-900 dark:text-white mb-10">
+        Modelo de Comportamiento
+      </h1>
+      <div className="space-y-6 text-gray-700 dark:text-gray-300 leading-relaxed">
+        <p className="text-lg">
+          El Modelo de Comportamiento define cómo el sistema de boletería responde a diferentes eventos e interacciones, asegurando una operación confiable y consistente.
         </p>
-        <div className="mt-6">
-          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-100 mb-4">
-            Key Behaviors
+        <div className="mt-8">
+          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-6 text-center">
+            Comportamientos Clave
           </h2>
-          <ul className="space-y-3">
-            <li className="bg-gray-100 dark:bg-gray-800 p-3 rounded-lg">
-              Ticket Booking Process
+          <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <li className="bg-gradient-to-br from-teal-500 to-green-600 text-white p-4 rounded-lg shadow-lg hover:shadow-xl transition transform hover:scale-105 text-center">
+              Proceso de Reserva de Boletos
             </li>
-            <li className="bg-gray-100 dark:bg-gray-800 p-3 rounded-lg">
-              Seat Selection Logic
+            <li className="bg-gradient-to-br from-pink-500 to-red-600 text-white p-4 rounded-lg shadow-lg hover:shadow-xl transition transform hover:scale-105 text-center">
+              Lógica de Selección de Asientos
             </li>
-            <li className="bg-gray-100 dark:bg-gray-800 p-3 rounded-lg">
-              Payment Processing
+            <li className="bg-gradient-to-br from-blue-500 to-indigo-600 text-white p-4 rounded-lg shadow-lg hover:shadow-xl transition transform hover:scale-105 text-center">
+              Procesamiento de Pagos
             </li>
-            <li className="bg-gray-100 dark:bg-gray-800 p-3 rounded-lg">
-              Booking Confirmation
+            <li className="bg-gradient-to-br from-yellow-400 to-orange-500 text-white p-4 rounded-lg shadow-lg hover:shadow-xl transition transform hover:scale-105 text-center">
+              Confirmación de Reserva
             </li>
           </ul>
         </div>
