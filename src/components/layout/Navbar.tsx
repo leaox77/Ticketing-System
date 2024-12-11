@@ -47,7 +47,7 @@ const Navbar = () => {
           <div className="flex">
             <div className="flex-shrink-0 flex items-center">
               <Link to="/" className="text-xl font-bold text-primary hover:text-primary/90 transition-colors">
-                CinemaTickets
+                CineBol
               </Link>
             </div>
             

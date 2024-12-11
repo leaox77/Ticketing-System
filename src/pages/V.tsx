@@ -1,4 +1,4 @@
-import VideoPlayer from '@/components/ui/video-player';
+
 
 const V = () => {
   return (
@@ -10,15 +10,20 @@ const V = () => {
           architecture, and implementation details.
         </p>
         
-        <div className="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg">
-          <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-4">
-            System Overview
-          </h2>
-          <VideoPlayer
-            videoId="5Aa44RdjCAg"
-            title="Cinema Ticketing System Overview"
-          />
+        <div className="mt-8 bg-gray-100 dark:bg-gray-800 p-6 rounded-lg h-[30rem] flex flex-col">
+        <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-4">
+          System Overview
+        </h2>
+        <div className="flex-grow h-full rounded-lg overflow-hidden">
+        <iframe
+          src={`https://www.youtube.com/embed/5Aa44RdjCAg`}
+          title='YouTube video player'
+          frameBorder="0"
+          allowFullScreen
+          className="w-full h-full"
+        />
         </div>
+      </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
           <div className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg">
