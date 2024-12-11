@@ -9,34 +9,40 @@ const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
   
   const navItems = [
-    { name: 'Content', path: '/content' },
-    { name: 'Introduction', path: '/introduction' },
-    { name: 'Background', path: '/background' },
+    { name: 'Contenido', path: '/content' },
+    { name: 'Marco Teorico', path: '/introduction' },
+    { name: 'Antecedentes', path: '/background' },
     {
-      name: 'Essential Model',
+      name: 'Paradigma del Analisis Estructurado',
       path: '/essential-model',
       subItems: [
         {
-          name: 'Ambiental Model',
+          name: 'Modelo Ambiental',
           path: '/essential-model/ambiental',
           subItems: [
-            { name: 'DP', path: '/essential-model/ambiental/dp' },
-            { name: 'DC', path: '/essential-model/ambiental/dc' },
-            { name: 'LA', path: '/essential-model/ambiental/la' },
+            { name: 'Declaración de propósitos', path: '/essential-model/ambiental/dp' },
+            { name: 'Diagrama de Contexto', path: '/essential-model/ambiental/dc' },
+            { name: 'Listado de Acontecimientos', path: '/essential-model/ambiental/la' },
           ],
         },
-        { name: 'Behavior Model', path: '/essential-model/behavior' },
+        { name: 'Modelo de Comportamiento', path: '/essential-model/behavior' },
       ],
     },
-    { name: 'AE', path: '/ae' },
-    { name: 'Object Oriented Model', path: '/object-oriented' },
-    { name: 'V', path: '/v' },
-    { name: 'C', path: '/c' },
+    { name: 'Modelo Orientado a Objetos', path: '/object-oriented' },
+    { name: 'Modelos de Casos de Uso', path: '/ae',
+      subItems: [
+        { name: 'Modelo de Caso de Uso de Negocio', path: '/ae/mcun' },
+        { name: 'Modelo de Caso se Uso de Sistema', path: '/ae/mcus' },
+        { name: 'Caso de Uso a Nivel Extendido', path: '/ae/cune' },
+      ],
+     },
+    { name: 'Video Explicativo', path: '/v' },
+    { name: 'Contacatos', path: '/c' },
   ];
 
   return (
     <nav className="bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50 border-b border-border">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-8xl mx-auto px-4">
         <div className="flex justify-between h-16">
           <div className="flex">
             <div className="flex-shrink-0 flex items-center">
