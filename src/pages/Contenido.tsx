@@ -1,4 +1,5 @@
 import logo from '../assets/cinebollogo.png';
+import { Link } from 'react-router-dom';
 
 const Content = () => {
   return (
@@ -31,11 +32,11 @@ const Content = () => {
       </div>
 
       <div className="mt-6 flex justify-center">
-        <a
-          href="background"
+        <Link
+          to="background"
           className="nav-item inline-flex items-center px-3 py-2 text-sm font-medium">
           Empieza ahora
-        </a>
+        </Link>
       </div>
 
       <div className="mt-8 text-center text-gray-600 dark:text-gray-400">
