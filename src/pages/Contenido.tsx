@@ -32,7 +32,7 @@ const Content = () => {
 
       <div className="mt-6 flex justify-center">
         <a
-          href="/background"
+          href="background"
           className="nav-item inline-flex items-center px-3 py-2 text-sm font-medium">
           Empieza ahora
         </a>
