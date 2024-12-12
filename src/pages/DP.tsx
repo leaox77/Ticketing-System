@@ -20,9 +20,6 @@ const DP = () => {
             <li>Confirmación de Reservas</li>
           </ul>
         </div>
-        <div className="w-full h-60 bg-gray-200 dark:bg-gray-700 rounded-lg flex items-center justify-center text-gray-500">
-          Espacio para un gráfico del diagrama de procesos
-        </div>
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ const LA = () => {
   return (
     <div className="max-w-7xl mx-auto p-6 space-y-10">
       <h1 className="text-5xl font-extrabold text-center text-gray-900 dark:text-white mb-10">
-        Lista de Acontecimientos (LA)
+        Lista de Acontecimientos
       </h1>
       <div className="space-y-6 text-gray-700 dark:text-gray-300 leading-relaxed">
         <p className="text-lg">
@@ -25,9 +25,6 @@ const LA = () => {
             <li>Sincronización de datos entre cajeros de autoservicio y el sistema central</li>
             <li>Emisión de boletos físicos</li>
           </ul>
-        </div>
-        <div className="w-full h-60 bg-gray-200 dark:bg-gray-700 rounded-lg flex items-center justify-center text-gray-500">
-          Espacio para un gráfico de los acontecimientos del sistema
         </div>
       </div>
     </div>

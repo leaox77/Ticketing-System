@@ -11,7 +11,7 @@ import DC from '@/pages/DC';
 import LA from '@/pages/LA';
 import AE from '@/pages/AE';
 import Mcun from '@/pages/Mcun';
-import Mcus from '@/pages/Mcun';
+import Mcus from '@/pages/Mcus';
 import Cune from '@/pages/Cune';
 import ObjectOriented from '@/pages/ObjectOriented';
 import V from '@/pages/V';
