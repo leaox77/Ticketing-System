@@ -29,117 +29,94 @@ const Cune = () => {
         {/* Tabla de Casos de Uso */}
         <div className="overflow-x-auto bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
           <h2 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">Casos de Uso</h2>
-          <table className="table-auto w-full border-collapse border border-gray-300 dark:border-gray-700">
-            <thead className="bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white">
-              <tr>
-                <th className="border border-gray-300 dark:border-gray-700 px-4 py-2">Caso de Uso</th>
-                <th className="border border-gray-300 dark:border-gray-700 px-4 py-2">Actores</th>
-                <th className="border border-gray-300 dark:border-gray-700 px-4 py-2">Propósito</th>
-                <th className="border border-gray-300 dark:border-gray-700 px-4 py-2">Resumen</th>
-                <th className="border border-gray-300 dark:border-gray-700 px-4 py-2">Tipo</th>
-                <th className="border border-gray-300 dark:border-gray-700 px-4 py-2">Referencias Cruzadas</th>
-                <th className="border border-gray-300 dark:border-gray-700 px-4 py-2">Precondiciones</th>
-                <th className="border border-gray-300 dark:border-gray-700 px-4 py-2">Postcondiciones</th>
-              </tr>
-            </thead>
-            <tbody>
-  <tr className="hover:bg-gray-100 dark:hover:bg-gray-700">
-    <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">Comprar boletos</td>
-    <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">Cliente, Sistema de Pago</td>
-    <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">Adquisición de boletos por parte del cliente</td>
-    <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">
-      El cliente selecciona una función, asiento, y tipo de boleto. Luego, realiza el pago correspondiente.
-    </td>
-    <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">Principal</td>
-    <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">
-      Vender boletos, Realizar pago
-    </td>
-    <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">
-      El cliente debe estar registrado. Deben existir funciones disponibles.
-    </td>
-    <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">
-      El cliente recibe el boleto. Se registra la transacción.
-    </td>
-  </tr>
-  <tr className="hover:bg-gray-100 dark:hover:bg-gray-700">
-    <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">Vender boletos</td>
-    <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">Cajero, Sistema de Generación de Boletos</td>
-    <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">
-      Facilitar la venta de boletos en taquilla
-    </td>
-    <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">
-      El cajero selecciona la función, asiento, y tipo de boleto. Imprime el boleto y registra la venta.
-    </td>
-    <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">Secundario</td>
-    <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">Comprar boletos, Generar reportes</td>
-    <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">Existencia de boletos disponibles</td>
-    <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">
-      El cliente recibe el boleto impreso. Se registra la venta.
-    </td>
-  </tr>
-  <tr className="hover:bg-gray-100 dark:hover:bg-gray-700">
-    <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">Realizar pago</td>
-    <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">Cliente, Sistema de Pago</td>
-    <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">
-      Procesar los pagos realizados por los clientes
-    </td>
-    <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">
-      El cliente ingresa los datos de pago y confirma la transacción. El sistema verifica la información y procesa el pago.
-    </td>
-    <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">Principal</td>
-    <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">
-      Comprar boletos
-    </td>
-    <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">
-      El cliente debe contar con un método de pago válido.
-    </td>
-    <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">
-      La transacción es procesada exitosamente. Se registra el pago.
-    </td>
-  </tr>
-  <tr className="hover:bg-gray-100 dark:hover:bg-gray-700">
-    <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">Generar reportes</td>
-    <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">Administrador</td>
-    <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">
-      Obtener informes sobre ventas y operaciones
-    </td>
-    <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">
-      El administrador selecciona el rango de fechas y el tipo de reporte. El sistema genera el informe solicitado.
-    </td>
-    <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">Secundario</td>
-    <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">
-      Vender boletos
-    </td>
-    <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">
-      Deben existir datos de ventas registrados en el sistema.
-    </td>
-    <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">
-      Se genera y entrega el informe al administrador.
-    </td>
-  </tr>
-  <tr className="hover:bg-gray-100 dark:hover:bg-gray-700">
-    <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">Resolver problemas</td>
-    <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">Soporte Técnico</td>
-    <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">
-      Brindar soluciones a fallos técnicos en el sistema
-    </td>
-    <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">
-      El equipo de soporte analiza el problema reportado y realiza las acciones necesarias para solucionarlo.
-    </td>
-    <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">Secundario</td>
-    <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">
-      Todas las operaciones del sistema
-    </td>
-    <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">
-      El sistema debe estar operativo y registrar el problema en un log.
-    </td>
-    <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">
-      El problema es resuelto y el sistema vuelve a operar con normalidad.
-    </td>
-  </tr>
-</tbody>
+          <table className="w-full text-sm text-left text-gray-700 dark:text-gray-200 border-collapse">
+  <thead className="bg-gradient-to-r from-blue-600 to-green-500 text-white text-md ">
+    <tr>
+      <th className="px-6 py-3 border border-gray-400">Caso de uso</th>
+      <th className="px-6 py-3 border border-gray-400">Actores</th>
+      <th className="px-6 py-3 border border-gray-400">Propósito</th>
+      <th className="px-6 py-3 border border-gray-400">Descripción</th>
+      <th className="px-6 py-3 border border-gray-400">Prioridad</th>
+      <th className="px-6 py-3 border border-gray-400">Dependencias</th>
+      <th className="px-6 py-3 border border-gray-400">Precondiciones</th>
+      <th className="px-6 py-3 border border-gray-400">Resultado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr className="bg-gradient-to-r from-blue-600 to-green-500 text-white text-md transition-colors duration-3100 hover:bg-gradient-to-r hover:from-green-500 hover:to-blue-600">
+      <td className="border border-gray-400 px-4 py-2 font-semibold text-gray-800">Comprar boletos</td>
+      <td className="border border-gray-400 px-4 py-2">Cliente, Sistema de Pago</td>
+      <td className="border border-gray-400 px-4 py-2">Adquisición de boletos por parte del cliente</td>
+      <td className="border border-gray-400 px-4 py-2">
+        El cliente selecciona una función, asiento, y tipo de boleto. Luego, realiza el pago correspondiente.
+      </td>
+      <td className="border border-gray-400 px-4 py-2">Principal</td>
+      <td className="border border-gray-400 px-4 py-2">Vender boletos, Realizar pago</td>
+      <td className="border border-gray-400 px-4 py-2">El cliente debe estar registrado. Deben existir funciones disponibles.</td>
+      <td className="border border-gray-400 px-4 py-2">
+        El cliente recibe el boleto. Se registra la transacción.
+      </td>
+    </tr>
+    <tr className="bg-gradient-to-r from-blue-600 to-green-500 text-white text-md transition-colors duration-3100 hover:bg-gradient-to-r hover:from-green-500 hover:to-blue-600">
+      <td className="border border-gray-400 px-4 py-2 font-semibold text-gray-800">Vender boletos</td>
+      <td className="border border-gray-400 px-4 py-2">Cajero, Sistema de Generación de Boletos</td>
+      <td className="border border-gray-400 px-4 py-2">Facilitar la venta de boletos en taquilla</td>
+      <td className="border border-gray-400 px-4 py-2">
+        El cajero selecciona la función, asiento, y tipo de boleto. Imprime el boleto y registra la venta.
+      </td>
+      <td className="border border-gray-400 px-4 py-2">Secundario</td>
+      <td className="border border-gray-400 px-4 py-2">Comprar boletos, Generar reportes</td>
+      <td className="border border-gray-400 px-4 py-2">Existencia de boletos disponibles</td>
+      <td className="border border-gray-400 px-4 py-2">
+        El cliente recibe el boleto impreso. Se registra la venta.
+      </td>
+    </tr>
+    <tr className="bg-gradient-to-r from-blue-600 to-green-500 text-white text-md transition-colors duration-3100 hover:bg-gradient-to-r hover:from-green-500 hover:to-blue-600">
+      <td className="border border-gray-400 px-4 py-2 font-semibold text-gray-800">Realizar pago</td>
+      <td className="border border-gray-400 px-4 py-2">Cliente, Sistema de Pago</td>
+      <td className="border border-gray-400 px-4 py-2">Procesar los pagos realizados por los clientes</td>
+      <td className="border border-gray-400 px-4 py-2">
+        El cliente ingresa los datos de pago y confirma la transacción. El sistema verifica la información y procesa el pago.
+      </td>
+      <td className="border border-gray-400 px-4 py-2">Principal</td>
+      <td className="border border-gray-400 px-4 py-2">Comprar boletos</td>
+      <td className="border border-gray-400 px-4 py-2">El cliente debe contar con un método de pago válido.</td>
+      <td className="border border-gray-400 px-4 py-2">
+        La transacción es procesada exitosamente. Se registra el pago.
+      </td>
+    </tr>
+    <tr className="bg-gradient-to-r from-blue-600 to-green-500 text-white text-md transition-colors duration-3100 hover:bg-gradient-to-r hover:from-green-500 hover:to-blue-600">
+  <td className="border border-gray-400 px-4 py-2 font-semibold text-gray-800">Generar reportes</td>
+  <td className="border border-gray-400 px-4 py-2">Administrador, Sistema de Reportes</td>
+  <td className="border border-gray-400 px-4 py-2">Proveer informes sobre las ventas y operaciones</td>
+  <td className="border border-gray-400 px-4 py-2">
+    El administrador solicita un reporte a través del sistema, seleccionando los parámetros requeridos como fechas, tipo de transacción, etc.
+  </td>
+  <td className="border border-gray-400 px-4 py-2">Secundario</td>
+  <td className="border border-gray-400 px-4 py-2">Vender boletos</td>
+  <td className="border border-gray-400 px-4 py-2">Existencia de datos en el sistema</td>
+  <td className="border border-gray-400 px-4 py-2">
+    El sistema genera un informe detallado y lo presenta al administrador.
+  </td>
+</tr>
+<tr className="bg-gradient-to-r from-blue-600 to-green-500 text-white text-md transition-colors duration-3100 hover:bg-gradient-to-r hover:from-green-500 hover:to-blue-600">
+  <td className="border border-gray-400 px-4 py-2 font-semibold text-gray-800">Resolver problemas</td>
+  <td className="border border-gray-400 px-4 py-2">Soporte Técnico, Sistema</td>
+  <td className="border border-gray-400 px-4 py-2">Asistir a los clientes y empleados con problemas técnicos</td>
+  <td className="border border-gray-400 px-4 py-2">
+    El cliente o empleado reporta un problema técnico. El soporte técnico diagnostica y resuelve el inconveniente utilizando el sistema.
+  </td>
+  <td className="border border-gray-400 px-4 py-2">Principal</td>
+  <td className="border border-gray-400 px-4 py-2">Ninguna</td>
+  <td className="border border-gray-400 px-4 py-2">El problema debe estar debidamente registrado.</td>
+  <td className="border border-gray-400 px-4 py-2">
+    El problema se resuelve y se notifica al cliente o empleado.
+  </td>
+</tr>
 
-          </table>
+  </tbody>
+</table>
+
         </div>
 
       </div>

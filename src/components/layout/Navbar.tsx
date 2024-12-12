@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Menu, ChevronDown, Sun, Moon } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useTheme } from '@/hooks/useTheme';
+import logo from '@/assets/cinebollogo.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,7 +38,7 @@ const Navbar = () => {
       ],
      },
     { name: 'Video Explicativo', path: '/v' },
-    { name: 'Contacatos', path: '/c' },
+    { name: 'Contactos', path: '/c' },
   ];
 
   return (
@@ -47,11 +48,17 @@ const Navbar = () => {
           <div className="flex">
             <div className="flex-shrink-0 flex items-center">
               <Link to="/" className="text-xl font-bold text-primary hover:text-primary/90 transition-colors">
-                CineBol
+                <div className="flex items-center justify-center mb-6 mt-6 bg-gray-500 dark:bg-transparent rounded-lg p-2">
+                  <img
+                  src={logo}
+                  alt="Cinema Icon"
+                  className="w-20 h-10"
+                  />
+                </div>
               </Link>
             </div>
             
-            <div className="hidden md:ml-6 md:flex md:space-x-4">
+            <div className="hidden md:ml-6 md:flex md:space-x-4 mt-3">
               {navItems.map((item) => (
                 <div key={item.name} className="relative group">
                   <Link
